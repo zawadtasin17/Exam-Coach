@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<conio.h>
-
+#include "chat.h"
 
 int main()
 {
@@ -30,7 +30,7 @@ int main()
 	case 3:
 		//call function for interactive chat with coach(Ibrahima's code)
 		system("cls");
-		printf("This will open the chat with caoch\n");
+		chat();
 		break;
 	case 4:
 		//call function for progress tracker
