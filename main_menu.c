@@ -1,9 +1,15 @@
 #include<stdio.h>
 #include<conio.h>
 #include "chat.h"
+#include"functions.h"
+
 
 int main()
 {
+	main_menu();
+}
+
+int main_menu() {
 	int operation;
 
 	printf("\t\t----- EXAM COACH -----\n\n");
@@ -44,6 +50,4 @@ int main()
 	default:
 		printf("invalid input");
 	}
-
-
 }
