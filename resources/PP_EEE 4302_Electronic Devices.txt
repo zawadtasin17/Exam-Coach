@@ -1,0 +1,71 @@
+﻿problem: Calculate the base current (IB) for a transistor in common-emitter configuration, given that the collector current (IC) is 2 mA and the current gain (β) is 100.
+answer: The base current can be calculated using the formula:
+
+IB = IC / β
+
+Given that the collector current (IC) is 2 mA and the current gain (β) is 100, we can substitute these values into the formula:
+
+IB = 2 mA / 100
+= 0.02 mA
+
+Hence, the base current is 0.02 mA.
+
+
+problem: Determine the voltage gain (Av) of an amplifier circuit with an input voltage (Vin) of 0.5 V and an output voltage (Vout) of 5 V.
+answer: The voltage gain can be calculated using the formula:
+
+Av = Vout / Vin
+
+Given that the input voltage (Vin) is 0.5 V and the output voltage (Vout) is 5 V, we can substitute these values into the formula:
+
+Av = 5 V / 0.5 V
+= 10
+
+Hence, the voltage gain of the amplifier circuit is 10.
+
+
+problem: Calculate the cutoff frequency (fc) of an RC low-pass filter with a resistor value (R) of 1 kΩ and a capacitor value (C) of 1 μF.
+answer: The cutoff frequency can be calculated using the formula:
+
+fc = 1 / (2πRC)
+
+Given that the resistor value (R) is 1 kΩ (1000 Ω) and the capacitor value (C) is 1 μF (0.000001 F), we can substitute these values into the formula:
+
+fc = 1 / (2π * 1000 Ω * 0.000001 F)
+= 159.2 Hz
+
+Hence, the cutoff frequency of the RC low-pass filter is approximately 159.2 Hz.
+
+
+problem: Determine the drain current (ID) of a MOSFET transistor in saturation mode, given that the threshold voltage (VT) is 2 V, the gate-source voltage (VGS) is 3 V, and the transconductance parameter (k) is 0.5 mA/V^2.
+answer: The drain current in saturation mode can be calculated using the formula:
+
+ID = k * (VGS - VT)^2
+
+Given that the threshold voltage (VT) is 2 V, the gate-source voltage (VGS) is 3 V, and the transconductance parameter (k) is 0.5 mA/V^2, we can substitute these values into the formula:
+
+ID = 0.5 mA/V^2 * (3 V - 2 V)^2
+= 0.5 mA/V^2 * (1 V)^2
+= 0.5 mA
+
+Hence, the drain current of the MOSFET transistor in saturation mode is 0.5 mA.
+
+
+problem: Calculate the output impedance (Zout) of a common-emitter amplifier circuit with a collector resistor (RC) of 10 kΩ and a load resistor (RL) of 5 kΩ.
+answer: The output impedance can be calculated using the formula:
+
+Zout = RC || RL
+
+where || represents the parallel combination.
+
+Given that the collector resistor (RC) is 10 kΩ (10000 Ω) and the load resistor (RL) is 5 kΩ (5000 Ω), we can calculate the parallel combination:
+
+1/Zout = 1/RC + 1/RL
+= 1/10000 Ω + 1/5000 Ω
+= 1/10000 Ω + 2/10000 Ω
+= 3/10000 Ω
+
+Zout = 10000 Ω / 3
+= 3333.33 Ω
+
+Hence, the output impedance of the common-emitter amplifier circuit is approximately 3333.33 Ω.

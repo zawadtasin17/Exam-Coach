@@ -1,0 +1,129 @@
+problem: Write an 8085 assembly language program to find the sum of a series of 8-bit numbers stored in memory location 2000H to 200FH. Store the result in memory location 2010H.
+answer: ; 8085 Assembly Language Program to Find the Sum of a Series
+
+ORG 2000H     ; Starting memory address
+
+MOV C, 00H    ; Clear the accumulator
+MOV B, 10H    ; Set loop counter to 16 (number of elements)
+LXI H, 2000H  ; Load memory location 2000H into HL register pair
+
+LOOP:
+MOV A, M      ; Move the number from memory to accumulator
+ADD C         ; Add accumulator and carry to the accumulator
+MOV C, A      ; Move the result to the carry
+INX H         ; Increment HL to point to the next memory location
+DCR B         ; Decrement the loop counter
+JNZ LOOP      ; Jump to the LOOP label if B is not zero
+
+MOV M, C      ; Move the final result to memory location 2010H
+
+HLT           ; Halt the program
+
+END           ; End of the program
+
+problem: Write an 8051 assembly language program to toggle the state of Port 1 continuously at a frequency of 1 Hz.
+answer: ; 8051 Assembly Language Program to Toggle Port 1
+
+ORG 0000H     ; Starting memory address
+
+MOV P1, 00H   ; Initialize Port 1 with 0
+
+LOOP:
+SETB P1.0     ; Set bit 0 of Port 1 (toggle the state)
+ACALL DELAY   ; Call the delay subroutine
+CLR P1.0     ; Clear bit 0 of Port 1 (toggle the state)
+ACALL DELAY   ; Call the delay subroutine
+SJMP LOOP     ; Jump to the LOOP label
+
+DELAY:
+MOV R1, #250  ; Set the loop counter to generate delay
+DELAY_LOOP:
+DJNZ R1, DELAY_LOOP  ; Decrement R1 and loop until R1 is zero
+RET           ; Return from the subroutine
+
+END           ; End of the program
+
+
+problem: Write an ARM assembly language program to find the maximum value in an array of 32-bit numbers stored in memory.
+answer: ; ARM Assembly Language Program to Find the Maximum Value in an Array
+
+AREA Array, DATA, READONLY
+arr    DCD 10, 20, 30, 40, 50, 60, 70, 80, 90, 100
+       DCD 110, 120, 130, 140, 150, 160, 170, 180, 190, 200
+       DCD 210, 220, 230, 240, 250, 260, 270, 280, 290, 300
+
+AREA Result, DATA, READWRITE
+max    DCD 0
+
+AREA Program, CODE
+ENTRY
+
+LDR R0, =arr    ; Load the base address of the array into R0
+LDR R1, =32     ; Load the number of elements in the array into R1
+LDR R2, [R0]    ; Load the first element of the array into R2
+ADD R0, R0, #4  ; Increment the memory address to point to the next element
+
+LOOP
+LDR R3, [R0]    ; Load the next element of the array into R3
+CMP R3, R2      ; Compare the current element with the maximum value
+BLE SKIP        ; Skip the next instruction if R3 <= R2
+MOV R2, R3      ; Move R3 to R2 if R3 > R2
+
+SKIP
+ADD R0, R0, #4  ; Increment the memory address to point to the next element
+SUBS R1, R1, #1 ; Decrement the loop counter
+BNE LOOP        ; Branch to LOOP if R1 is not equal to zero
+
+STR R2, =max    ; Store the maximum value in the max variable
+
+END
+
+
+problem: Write an AVR assembly language program to blink an LED connected to Port B, Pin 0 at a frequency of 1 Hz.
+answer: ; AVR Assembly Language Program to Blink an LED
+
+.include "m328pdef.inc" ; Include AVR ATmega328P definitions
+
+.def temp = R16         ; Define a temporary register
+
+ldi temp, 0xFF          ; Set all bits of Port B as outputs
+out DDRB, temp
+
+loop:
+ldi temp, (1 << PORTB0) ; Set bit 0 of Port B (turn on LED)
+out PORTB, temp
+call delay              ; Call the delay subroutine
+
+ldi temp, 0             ; Clear temp register
+out PORTB, temp         ; Clear bit 0 of Port B (turn off LED)
+call delay              ; Call the delay subroutine
+
+jmp loop                ; Jump back to the loop
+
+delay:
+ldi temp, 0x0F          ; Set the delay counter
+delay_loop:
+dec temp                ; Decrement the delay counter
+brne delay_loop         ; Branch to delay_loop if the counter is not zero
+ret                     ; Return from the subroutine
+
+.end                    ; End of the program
+
+
+problem: Write an Intel 8086 assembly language program to find the factorial of a given number stored in memory location 1000H.
+answer: ; 8086 Assembly Language Program to Find the Factorial
+
+ORG 1000H     ; Starting memory address
+
+MOV CX, [1000H] ; Load the number from memory location 1000H to CX register
+MOV AX, 1     ; Initialize AX with 1 (factorial)
+LOOP_START:
+MUL CX        ; Multiply AX by CX
+DEC CX        ; Decrement CX
+JNZ LOOP_START ; Jump to LOOP_START if CX is not zero
+
+MOV [2000H], AX ; Store the factorial in memory location 2000H
+
+HLT           ; Halt the program
+
+END           ; End of the program

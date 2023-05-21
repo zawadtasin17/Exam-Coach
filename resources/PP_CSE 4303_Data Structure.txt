@@ -1,0 +1,425 @@
+problem: Implement a stack data structure using an array and perform push and pop operations.
+answer: #include <stdio.h>
+
+#define MAX_SIZE 100
+
+typedef struct {
+    int stack[MAX_SIZE];
+    int top;
+} Stack;
+
+void init(Stack *s) {
+    s->top = -1;
+}
+
+void push(Stack *s, int data) {
+    if (s->top == MAX_SIZE - 1) {
+        printf("Stack Overflow\n");
+        return;
+    }
+    s->top++;
+    s->stack[s->top] = data;
+}
+
+int pop(Stack *s) {
+    if (s->top == -1) {
+        printf("Stack Underflow\n");
+        return -1;
+    }
+    int data = s->stack[s->top];
+    s->top--;
+    return data;
+}
+
+int main() {
+    Stack stack;
+    init(&stack);
+
+    push(&stack, 10);
+    push(&stack, 20);
+    push(&stack, 30);
+
+    printf("Popped element: %d\n", pop(&stack));
+    printf("Popped element: %d\n", pop(&stack));
+    printf("Popped element: %d\n", pop(&stack));
+    printf("Popped element: %d\n", pop(&stack));
+
+    return 0;
+}
+
+problem: Implement a queue data structure using a linked list and perform enqueue and dequeue operations.
+answer: #include <stdio.h>
+#include <stdlib.h>
+
+typedef struct Node {
+    int data;
+    struct Node* next;
+} Node;
+
+typedef struct {
+    Node* front;
+    Node* rear;
+} Queue;
+
+void init(Queue* q) {
+    q->front = NULL;
+    q->rear = NULL;
+}
+
+void enqueue(Queue* q, int data) {
+    Node* newNode = (Node*)malloc(sizeof(Node));
+    newNode->data = data;
+    newNode->next = NULL;
+
+    if (q->front == NULL) {
+        q->front = newNode;
+        q->rear = newNode;
+    } else {
+        q->rear->next = newNode;
+        q->rear = newNode;
+    }
+}
+
+int dequeue(Queue* q) {
+    if (q->front == NULL) {
+        printf("Queue Underflow\n");
+        return -1;
+    }
+    Node* temp = q->front;
+    int data = temp->data;
+    q->front = q->front->next;
+    if (q->front == NULL) {
+        q->rear = NULL;
+    }
+    free(temp);
+    return data;
+}
+
+int main() {
+    Queue queue;
+    init(&queue);
+
+    enqueue(&queue, 10);
+    enqueue(&queue, 20);
+    enqueue(&queue, 30);
+
+    printf("Dequeued element: %d\n", dequeue(&queue));
+    printf("Dequeued element: %d\n", dequeue(&queue));
+    printf("Dequeued element: %d\n", dequeue(&queue));
+    printf("Dequeued element: %d\n", dequeue(&queue));
+
+    return 0;
+}
+
+
+problem: Implement a linked list data structure and perform operations such as insertion, deletion, and display.
+answer: #include <stdio.h>
+#include <stdlib.h>
+
+typedef struct Node {
+    int data;
+    struct Node* next;
+} Node;
+
+Node* createNode(int data) {
+    Node* newNode = (Node*)malloc(sizeof(Node));
+    newNode->data = data;
+    newNode->next = NULL;
+    return newNode;
+}
+
+void insertAtBeginning(Node** head, int data) {
+    Node* newNode = createNode(data);
+    newNode->next = *head;
+    *head = newNode;
+}
+
+void insertAtEnd(Node** head, int data) {
+    Node* newNode = createNode(data);
+    if (*head == NULL) {
+        *head = newNode;
+        return;
+    }
+    Node* temp = *head;
+    while (temp->next != NULL) {
+        temp = temp->next;
+    }
+    temp->next = newNode;
+}
+
+void deleteNode(Node** head, int data) {
+    if (*head == NULL) {
+        printf("List is empty\n");
+        return;
+    }
+    Node* temp = *head;
+    Node* prev = NULL;
+    if (temp != NULL && temp->data == data) {
+        *head = temp->next;
+        free(temp);
+        return;
+    }
+    while (temp != NULL && temp->data != data) {
+        prev = temp;
+        temp = temp->next;
+    }
+    if (temp == NULL) {
+        printf("Element not found\n");
+        return;
+    }
+    prev->next = temp->next;
+    free(temp);
+}
+
+void displayList(Node* head) {
+    if (head == NULL) {
+        printf("List is empty\n");
+        return;
+    }
+    Node* temp = head;
+    while (temp != NULL) {
+        printf("%d ", temp->data);
+        temp = temp->next;
+    }
+    printf("\n");
+}
+
+int main() {
+    Node* head = NULL;
+
+    insertAtBeginning(&head, 10);
+    insertAtBeginning(&head, 20);
+    insertAtEnd(&head, 30);
+    displayList(head);
+
+    deleteNode(&head, 20);
+    deleteNode(&head, 40);
+    displayList(head);
+
+    return 0;
+}
+
+problem:  Implement a binary search tree (BST) data structure and perform operations such as insertion, deletion, and search.
+answer: #include <stdio.h>
+#include <stdlib.h>
+
+typedef struct Node {
+    int data;
+    struct Node* left;
+    struct Node* right;
+} Node;
+
+Node* createNode(int data) {
+    Node* newNode = (Node*)malloc(sizeof(Node));
+    newNode->data = data;
+    newNode->left = NULL;
+    newNode->right = NULL;
+    return newNode;
+}
+
+Node* insert(Node* root, int data) {
+    if (root == NULL) {
+        return createNode(data);
+    }
+    if (data < root->data) {
+        root->left = insert(root->left, data);
+    } else if (data > root->data) {
+        root->right = insert(root->right, data);
+    }
+    return root;
+}
+
+Node* minValueNode(Node* node) {
+    Node* current = node;
+    while (current && current->left != NULL) {
+        current = current->left;
+    }
+    return current;
+}
+
+Node* deleteNode(Node* root, int data) {
+    if (root == NULL) {
+        return root;
+    }
+    if (data < root->data) {
+        root->left = deleteNode(root->left, data);
+    } else if (data > root->data) {
+        root->right = deleteNode(root->right, data);
+    } else {
+        if (root->left == NULL) {
+            Node* temp = root->right;
+            free(root);
+            return temp;
+        } else if (root->right == NULL) {
+            Node* temp = root->left;
+            free(root);
+            return temp;
+        }
+        Node* temp = minValueNode(root->right);
+        root->data = temp->data;
+        root->right = deleteNode(root->right, temp->data);
+    }
+    return root;
+}
+
+Node* search(Node* root, int data) {
+    if (root == NULL || root->data == data) {
+        return root;
+    }
+    if (data < root->data) {
+        return search(root->left, data);
+    }
+    return search(root->right, data);
+}
+
+void inorderTraversal(Node* root) {
+    if (root != NULL) {
+        inorderTraversal(root->left);
+        printf("%d ", root->data);
+        inorderTraversal(root->right);
+    }
+}
+
+int main() {
+    Node* root = NULL;
+
+    root = insert(root, 50);
+    insert(root, 30);
+    insert(root, 20);
+    insert(root, 40);
+    insert(root, 70);
+    insert(root, 60);
+    insert(root, 80);
+
+    printf("Inorder traversal: ");
+    inorderTraversal(root);
+    printf("\n");
+
+    Node* node = search(root, 40);
+    if (node != NULL) {
+        printf("Found node with data 40\n");
+    } else {
+        printf("Node with data 40 not found\n");
+    }
+
+    root = deleteNode(root, 40);
+    printf("Inorder traversal after deletion: ");
+    inorderTraversal(root);
+    printf("\n");
+
+    return 0;
+
+
+problem:  Implement a hash table data structure using separate chaining for collision resolution and perform operations such as insertion, deletion, and search.
+answer: #include <stdio.h>
+#include <stdlib.h>
+
+#define SIZE 10
+
+typedef struct Node {
+    int key;
+    int value;
+    struct Node* next;
+} Node;
+
+Node* createNode(int key, int value) {
+    Node* newNode = (Node*)malloc(sizeof(Node));
+    newNode->key = key;
+    newNode->value = value;
+    newNode->next = NULL;
+    return newNode;
+}
+
+int hashFunction(int key) {
+    return key % SIZE;
+}
+
+void insert(Node* hashTable[], int key, int value) {
+    int index = hashFunction(key);
+    Node* newNode = createNode(key, value);
+    if (hashTable[index] == NULL) {
+        hashTable[index] = newNode;
+    } else {
+        Node* temp = hashTable[index];
+        while (temp->next != NULL) {
+            temp = temp->next;
+        }
+        temp->next = newNode;
+    }
+}
+
+void deleteNode(Node* hashTable[], int key) {
+    int index = hashFunction(key);
+    if (hashTable[index] == NULL) {
+        printf("Key not found\n");
+        return;
+    }
+    Node* temp = hashTable[index];
+    Node* prev = NULL;
+    while (temp != NULL && temp->key != key) {
+        prev = temp;
+        temp = temp->next;
+    }
+    if (temp == NULL) {
+        printf("Key not found\n");
+        return;
+    }
+    if (prev == NULL) {
+        hashTable[index] = temp->next;
+    } else {
+        prev->next = temp->next;
+    }
+    free(temp);
+}
+
+int search(Node* hashTable[], int key) {
+    int index = hashFunction(key);
+    Node* temp = hashTable[index];
+    while (temp != NULL) {
+        if (temp->key == key) {
+            return temp->value;
+        }
+        temp = temp->next;
+    }
+    return -1;
+}
+
+void displayHashTable(Node* hashTable[]) {
+    for (int i = 0; i < SIZE; i++) {
+        printf("Index %d: ", i);
+        Node* temp = hashTable[i];
+        while (temp != NULL) {
+            printf("(%d, %d) ", temp->key, temp->value);
+            temp = temp->next;
+        }
+        printf("\n");
+    }
+}
+
+int main() {
+    Node* hashTable[SIZE];
+    for (int i = 0; i < SIZE; i++) {
+        hashTable[i] = NULL;
+    }
+
+    insert(hashTable, 10, 50);
+    insert(hashTable, 20, 70);
+    insert(hashTable, 30, 90);
+    insert(hashTable, 40, 110);
+
+    printf("Hash table after insertions:\n");
+    displayHashTable(hashTable);
+
+    deleteNode(hashTable, 30);
+    printf("Hash table after deletion of key 30:\n");
+    displayHashTable(hashTable);
+
+    int value = search(hashTable, 20);
+    if (value != -1) {
+        printf("Value of key 20: %d\n", value);
+    } else {
+        printf("Key 20 not found\n");
+    }
+
+    return 0;
+}

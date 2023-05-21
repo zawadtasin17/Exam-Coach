@@ -1,0 +1,92 @@
+question: What are the fundamental concepts of structured programming, and how do they differ from other programming paradigms?
+tip: defining what structured programming is .
+tip2:  highlight the key concepts.
+answer: Structured programming is a programming paradigm that emphasizes the use of control structures and modular design to create clear, readable code. The key concepts of structured programming include top-down design, which involves breaking a problem down into smaller sub-problems and solving them in order, and the use of control structures such as loops and conditionals to control program flow. Structured programming differs from other paradigms, such as procedural programming, in that it places a greater emphasis on code readability and organization, and on breaking code down into reusable modules.
+
+question: How do you design a program using structured programming techniques, and what are the benefits of this approach?
+tip: explain what modular programming is.
+tip2: the advantages of modular programming.
+answer: Designing a program using structured programming techniques involves breaking the problem down into smaller sub-problems and designing functions or procedures to solve them. The program is then assembled from these smaller pieces, using control structures to control program flow. The benefits of using structured programming techniques include improved readability and maintainability, since the program is broken down into smaller, more manageable pieces, and improved reusability, since the functions and procedures can be used in other programs as well.
+
+question: Write a C program to print the multiplication table of a given number.
+tip: scanf() function to read a number.
+tip2: Use a for loop .
+answer: #include <stdio.h>
+
+int main() {
+    int num, i;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    for (i = 1; i <= 10; i++) {
+        printf("%d x %d = %d\n", num, i, num * i);
+    }
+    return 0;
+}
+
+questuion: Write a C program to find the largest of three numbers entered by the user.
+tip: Use the scanf() function to read three numbers.
+tip2: Use if statements to compare the three numbers.
+answer: #include <stdio.h>
+
+int main() {
+    int num1, num2, num3;
+    printf("Enter three numbers: ");
+    scanf("%d %d %d", &num1, &num2, &num3);
+    if (num1 >= num2 && num1 >= num3) {
+        printf("%d is the largest number.", num1);
+    } else if (num2 >= num1 && num2 >= num3) {
+        printf("%d is the largest number.", num2);
+    } else {
+        printf("%d is the largest number.", num3);
+    }
+    return 0;
+}
+
+question: Write a C program that reads in an array of integers and calculates the sum, average, maximum, and minimum values of the elements. Additionally, the program should sort the array in ascending order using the bubble sort algorithm. How can you ensure that your code is efficient, easy to read and understand, and free from common errors?
+tip: Use comments to explain the purpose.
+tip2: meaningful variable and function names.
+tip3:  proper formatting and indentation to make the code easier.
+answer: #include <stdio.h>
+
+#define SIZE 10
+
+int main() {
+    int arr[SIZE];
+    int i, j, temp, sum = 0, max = arr[0], min = arr[0];
+    float avg;
+
+    printf("Enter %d integers:\n", SIZE);
+    for (i = 0; i < SIZE; i++) {
+        scanf("%d", &arr[i]);
+        sum += arr[i];
+        if (arr[i] > max)
+            max = arr[i];
+        if (arr[i] < min)
+            min = arr[i];
+    }
+
+    avg = (float) sum / SIZE;
+
+    printf("Sum: %d\n", sum);
+    printf("Average: %.2f\n", avg);
+    printf("Maximum: %d\n", max);
+    printf("Minimum: %d\n", min);
+
+    // Bubble sort
+    for (i = 0; i < SIZE - 1; i++) {
+        for (j = 0; j < SIZE - i - 1; j++) {
+            if (arr[j] > arr[j+1]) {
+                temp = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = temp;
+            }
+        }
+    }
+
+    printf("Sorted array in ascending order:\n");
+    for (i = 0; i < SIZE; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    return 0;
+}

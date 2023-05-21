@@ -1,0 +1,64 @@
+﻿problem: A centrifugal pump has an impeller diameter of 0.4 m and rotates at 1500 rpm. If the pump delivers a flow rate of 0.1 m³/s, calculate the pump's specific speed.
+answer: The specific speed of a centrifugal pump can be calculated using the equation:
+Specific Speed = (N √Q) / (H^0.75)
+
+Where N is the pump's rotational speed in rpm, Q is the pump's flow rate in m³/s, and H is the pump's head in meters.
+
+Substituting the given values:
+N = 1500 rpm
+Q = 0.1 m³/s
+
+To calculate the specific speed, we need to know the pump's head.
+
+
+
+problem: A pelton wheel turbine has a nozzle diameter of 0.3 m and operates with a water flow rate of 0.05 m³/s. If the jet speed is 40 m/s, calculate the power output of the turbine.
+answer: The power output of a pelton wheel turbine can be calculated using the equation:
+Power Output = (ρQgH)η
+
+Where ρ is the density of water, Q is the water flow rate in m³/s, g is the acceleration due to gravity, H is the net head in meters, and η is the turbine efficiency.
+
+Substituting the given values:
+Q = 0.05 m³/s
+Jet Speed = 40 m/s
+
+To calculate the power output, we need to know the density of water, the net head, and the turbine efficiency.
+
+problem: A reciprocating pump has a piston diameter of 0.2 m and operates at a speed of 120 rpm. If the piston stroke length is 0.3 m, calculate the pump's discharge.
+answer: The pump's discharge can be calculated using the equation:
+Discharge = (π/4) × D² × N × L
+
+Where D is the piston diameter, N is the pump's rotational speed in rpm, and L is the piston stroke length.
+
+Substituting the given values:
+D = 0.2 m
+N = 120 rpm
+L = 0.3 m
+
+Calculate the pump's discharge using the formula.
+
+problem: A Francis turbine operates with a water flow rate of 2 m³/s and a net head of 50 m. If the turbine efficiency is 90%, calculate the power output of the turbine.
+answer: The power output of a Francis turbine can be calculated using the equation:
+Power Output = ρQgHη
+
+Where ρ is the density of water, Q is the water flow rate in m³/s, g is the acceleration due to gravity, H is the net head in meters, and η is the turbine efficiency.
+
+Substituting the given values:
+Q = 2 m³/s
+H = 50 m
+Efficiency = 90%
+
+To calculate the power output, we need to know the density of water.
+
+
+problem: A gear pump has a gear diameter of 0.15 m and rotates at 3000 rpm. If the pump delivers a flow rate of 0.02 m³/s, calculate the pump's volumetric efficiency.
+answer: he volumetric efficiency of a gear pump can be calculated using the equation:
+Volumetric Efficiency = (Qa / Qt) × 100
+
+Where Qa is the actual flow rate delivered by the pump and Qt is the theoretical flow rate.
+
+Substituting the given values:
+Qa = 0.02 m³/s
+Qt = ?
+
+To calculate the volumetric efficiency, we need to know the theoretical flow rate of the pump.

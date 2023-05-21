@@ -1,0 +1,91 @@
+problem:  Convert the IP address "192.168.1.10" to binary.
+answer: The IP address "192.168.1.10" can be converted to binary by converting each octet (segment) to its binary representation.
+
+192 = 11000000
+168 = 10101000
+1 = 00000001
+10 = 00001010
+
+Therefore, the binary representation of the IP address "192.168.1.10" is: 11000000.10101000.00000001.00001010
+
+
+
+
+
+problem:  Determine the subnet mask and network address given the IP address and subnet prefix length.
+IP address: 192.168.1.10
+Subnet prefix length: 24
+answer: To determine the subnet mask, we need to convert the subnet prefix length to its binary representation and create a mask with that number of 1s followed by 0s.
+
+Subnet prefix length: 24
+Binary representation: 11111111.11111111.11111111.00000000
+
+Converting the binary representation to decimal gives us the subnet mask:
+
+255.255.255.0
+
+To find the network address, we perform a bitwise AND operation between the IP address and the subnet mask:
+
+IP address: 11000000.10101000.00000001.00001010
+Subnet mask: 11111111.11111111.11111111.00000000 (255.255.255.0)
+Network address: 11000000.10101000.00000001.00000000
+
+Therefore, the network address for the IP address "192.168.1.10" with a subnet prefix length of 24 is "192.168.1.0".
+
+
+
+
+problem: Calculate the maximum number of hosts allowed in a subnet given the subnet mask.
+Subnet mask: 255.255.255.0
+answer: To calculate the maximum number of hosts allowed in a subnet, we need to determine the number of host bits (bits set to 0) in the subnet mask.
+
+Subnet mask: 11111111.11111111.11111111.00000000 (255.255.255.0)
+
+In the subnet mask, there are 8 host bits set to 0. To calculate the maximum number of hosts, we subtract 2 from 2 raised to the power of the number of host bits.
+
+Number of host bits: 8
+Maximum number of hosts: 2^8 - 2 = 256 - 2 = 254
+
+Therefore, the maximum number of hosts allowed in a subnet with the subnet mask "255.255.255.0" is 254.
+
+
+
+
+
+
+problem: : Calculate the broadcast address given the network address and subnet mask.
+Network address: 192.168.1.0
+Subnet mask: 255.255.255.192
+answer: To calculate the broadcast address, we perform a bitwise OR operation between the network address and the bitwise complement of the subnet mask.
+
+Network address: 11000000.10101000.00000001.00000000 (192.168.1.0)
+Subnet mask: 11111111.11111111.11111111.11000000 (255.255.255.192)
+
+Bitwise complement of subnet mask: 00000000.00000000.00000000.00111111 (0.0.0.63)
+
+Performing a bitwise OR operation:
+Network address: 11000000.10101000.00000001.00000000 (192.168.1.0)
+Bitwise complement of subnet mask: 00000000.00000000.00000000.00111111 (0.0.0.63)
+Result (Broadcast address): 11000000.10101000.00000001.00111111 (192.168.1.63)
+
+Therefore, the broadcast address for the network address "192.168.1.0" with the subnet mask "255.255.255.192" is "192.168.1.63".
+
+
+
+
+
+
+problem: Determine the class and default subnet mask of an IP address.
+IP address: 10.22.50.5 
+answer: To determine the class and default subnet mask of an IP address, we need to examine the range of the first octet.
+
+First octet: 10 (Binary: 00001010)
+
+Based on the range of the first octet, we can determine the class and default subnet mask as follows:
+
+Class A: 1.0.0.0 to 126.0.0.0 with a default subnet mask of 255.0.0.0
+Class B: 128.0.0.0 to 191.255.0.0 with a default subnet mask of 255.255.0.0
+Class C: 192.0.0.0 to 223.255.255.0 with a default subnet mask of 255.255.255.0
+Class D: 224.0.0.0 to 239.255.255.255 (Reserved for multicast)
+Class E: 240.0.0.0 to 255.255.255.255 (Reserved for experimental use)
+In this case, the IP address "10.22.50.5" falls within the range of Class A addresses. Therefore, the class is A, and the default subnet mask is 255.0.0.0.

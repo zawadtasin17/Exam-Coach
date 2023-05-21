@@ -1,0 +1,78 @@
+Which of the following is not a programming language?
+1) Java
+2) HTML
+3) Python
+4) CSS
+Answer: 2) HTML
+Which of the following is a unit of electric current?
+1) Volt
+2) Ampere
+3) Ohm
+4) Watt
+Answer: 2) Ampere
+Which of the following is not a type of computer memory?
+1) ROM
+2) RAM
+3) CPU
+4) Cache
+Answer: 3) CPU
+The base-10 number 42 is converted to binary representation. What is the binary equivalent?
+1) 101010
+2) 110101
+3) 100110
+4) 111001
+Answer: 3) 100110
+Which of the following is used to store data permanently in a computer?
+1) RAM
+2) ROM
+3) Cache
+4) CPU
+Answer: 2) ROM
+Which of the following is used to create a graphical user interface (GUI)?
+1) Python
+2) HTML
+3) CSS
+4) Visual Basic
+Answer : 4) Visual Basic
+A computer's memory has a total capacity of 8 gigabytes (GB). If each memory cell can store 4 bytes of data, how many cells are present in the memory?
+1) 2,048,000
+2) 2,097,152
+3) 8,192,000
+4) 8,388,608
+Answer: 4) 2,097,152
+Which of the following is an example of a high-level programming language?
+1) Assembly language
+2) C
+3) Machine language
+4) Binary
+Answer : 2) C
+Which of the following is not a data type in programming?
+1) Integer
+2) Float
+3) Double
+4) String array
+Answer : 4) String array
+Which of the following is not an operating system?
+1) Linux
+2) Windows
+3) macOS
+4) Photoshop
+Answer: 4) Photoshop
+Which of the following is used to convert a high-level programming language into machine code?
+1) Interpreter
+2) Compiler
+3) Debugger
+4) Editor
+Answer: 2) Compiler
+Which of the following is used to test a program for errors?
+1) Compiler
+2) Interpreter
+3) Debugger
+4) Editor
+Answer: 3) Debugger
+Which of the following is a storage device used to store data permanently?
+1) USB drive
+2) RAM
+3) Hard disk drive
+4) CD-ROM
+Answer: 3) Hard disk drive

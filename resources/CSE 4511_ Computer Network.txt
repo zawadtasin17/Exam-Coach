@@ -1,0 +1,24 @@
+question: What are the fundamental concepts of computer networking, and how do they relate to the OSI model?
+tip: defining the fundamental concepts.
+tip2: Use specific examples.
+answer: The fundamental concepts of computer networking include protocols, addressing, routing, and switching. These concepts relate to the OSI (Open Systems Interconnection) model, which is a conceptual framework for understanding how communication occurs between devices on a network. The OSI model consists of seven layers, each of which is responsible for a specific aspect of network communication, from physical transmission to application-level services.
+
+question: What are the different types of network topologies, and what are their advantages and disadvantages?
+tip: Identify each of the different types of network topologies.
+tip2: Provide real-world scenarios where each topology might be used.
+answer: The different types of network topologies include bus, star, ring, mesh, and hybrid. A bus topology is simple and inexpensive, but can be prone to congestion and data collisions. A star topology is reliable and easy to maintain, but can be expensive to implement. A ring topology is fast and efficient, but can be difficult to troubleshoot. A mesh topology is highly resilient and can handle large amounts of traffic, but can be costly to implement. A hybrid topology combines two or more of these topologies, offering the benefits of each while minimizing the drawbacks.
+
+question: How do networking protocols like TCP/IP, DNS, and HTTP enable communication between devices on a network?
+tip: Explain what each of these protocols is and what it does.
+tip2: examples to show how these protocols are used
+answer: Networking protocols like TCP/IP (Transmission Control Protocol/Internet Protocol), DNS (Domain Name System), and HTTP (Hypertext Transfer Protocol) enable communication between devices on a network by providing a standardized way for devices to exchange data. TCP/IP defines how data is transmitted over a network, DNS translates domain names into IP addresses, and HTTP enables web browsers to request and receive web pages.
+
+question: What are the primary network devices and components, and what are their functions?
+tip: Identify each of the primary network devices and components.
+tip2: Provide examples of how each device or component might be used in a network.
+answer: The primary network devices and components include routers, switches, hubs, modems, and network interface cards (NICs). Routers are responsible for forwarding data between networks, switches connect devices within a network, hubs are used to extend the reach of a network, modems convert analog signals to digital signals for transmission over a network, and NICs connect devices to a network.
+
+question: How do network security threats like malware, phishing, and hacking impact computer networks, and what measures can be taken to prevent them?
+tip: Define each of the different network security threats.
+tip2: Outline measures that can be taken to prevent these threats.
+answer: Network security threats like malware, phishing, and hacking can have serious consequences for computer networks, including data theft, system downtime, and financial loss. Measures that can be taken to prevent these threats include implementing strong passwords, using firewalls and antivirus software, regularly updating software and firmware, and providing security training to employees.

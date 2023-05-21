@@ -1,0 +1,56 @@
+﻿problem: Calculate the energy of a photon with a frequency of 5 × 10^14 Hz.
+answer: The energy of a photon can be calculated using the equation:
+
+Energy = Planck's Constant (h) × Frequency
+
+Substituting the given values:
+
+Energy = 6.626 × 10^-34 J·s × 5 × 10^14 Hz
+
+
+
+problem: Calculate the de Broglie wavelength of an electron with a velocity of 5 × 10^6 m/s.
+answer: The de Broglie wavelength of a particle can be calculated using the equation:
+
+Wavelength = Planck's Constant (h) / (Mass × Velocity)
+
+Substituting the given values for the mass of an electron and the velocity:
+
+Wavelength = (6.626 × 10^-34 J·s) / ((9.109 × 10^-31 kg) × (5 × 10^6 m/s))
+
+
+
+problem: Calculate the Bohr radius of a hydrogen atom.
+answer: The Bohr radius of a hydrogen atom can be calculated using the equation:
+
+Bohr Radius = (ε₀ × h²) / (π × (e² × mₑ))
+
+Where ε₀ is the permittivity of free space, h is Planck's constant, e is the elementary charge, and mₑ is the mass of an electron.
+
+Substituting the given values:
+
+Bohr Radius = [(8.854 × 10^-12 F/m) × (6.626 × 10^-34 J·s)²] / [π × ((1.602 × 10^-19 C)² × (9.109 × 10^-31 kg))]
+
+
+
+problem: Determine the number of valence electrons in an atom with the electron configuration 1s² 2s² 2p⁶ 3s² 3p³.
+answer: The electron configuration represents the distribution of electrons in an atom's energy levels and subshells. The number of valence electrons can be determined by looking at the outermost energy level.
+
+In this case, the outermost energy level is the third energy level (n = 3). The s and p subshells in the third energy level contain a total of 8 electrons (2s² + 2p⁶). Therefore, there are 8 valence electrons.
+
+
+
+problem: Calculate the mass defect and binding energy of a nucleus with a mass of 120.9 atomic mass units (u), while its individual protons and neutrons have a combined mass of 121.7 u.
+answer: The mass defect is the difference between the actual mass of a nucleus and the sum of its individual protons and neutrons.
+
+Mass Defect = (Sum of Proton and Neutron Masses) - (Actual Mass of Nucleus)
+
+Mass Defect = 121.7 u - 120.9 u
+
+The binding energy can be calculated using Einstein's mass-energy equivalence equation:
+
+Binding Energy = Mass Defect × (Speed of Light)²
+
+Substituting the calculated mass defect into the equation:
+
+Binding Energy = (Mass Defect) × (3.00 × 10^8 m/s)²

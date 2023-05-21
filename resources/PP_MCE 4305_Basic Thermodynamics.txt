@@ -1,0 +1,77 @@
+﻿problem: A gas undergoes an isothermal expansion process at a constant temperature of 300 K. If the initial volume is 2 m³ and the final volume is 4 m³, calculate the work done by the gas.
+answer: For an isothermal process, the work done by a gas can be calculated using the equation:
+Work = nRT ln(Vf / Vi)
+
+Where n is the number of moles of the gas, R is the ideal gas constant, T is the temperature in Kelvin, Vf is the final volume, and Vi is the initial volume.
+
+Assuming the gas is an ideal gas, the number of moles can be calculated using the ideal gas equation:
+n = PV / RT
+
+Substituting the given values:
+P = constant (since it's an isothermal process)
+R = ideal gas constant
+T = 300 K
+Vf = 4 m³
+Vi = 2 m³
+
+First, calculate the number of moles:
+n = PV / RT = constant
+
+Then, calculate the work done:
+Work = nRT ln(Vf / Vi)
+
+
+problem: A piston-cylinder device contains 0.5 kg of air. The initial pressure is 200 kPa, and the initial volume is 0.1 m³. The air undergoes an adiabatic compression process with a final volume of 0.05 m³. If the heat capacity ratio (γ) for air is 1.4, calculate the final pressure.
+answer: For an adiabatic process, the relationship between pressure and volume can be described by the equation:
+Pf Vi^γ = Pi Vf^γ
+
+Where Pf is the final pressure, Vi is the initial volume, Pi is the initial pressure, Vf is the final volume, and γ is the heat capacity ratio.
+
+Substituting the given values:
+Pf (0.1 m³)^1.4 = (200 kPa) (0.05 m³)^1.4
+
+Solve for Pf to find the final pressure.
+
+
+problem: A heat engine has an efficiency of 30%. If the engine absorbs heat energy of 5000 J, calculate the work output of the engine.
+answer: The efficiency of a heat engine can be calculated using the equation:
+Efficiency = (Work output) / (Heat input)
+
+Rearranging the equation:
+Work output = Efficiency × Heat input
+
+Substituting the given values:
+Efficiency = 30%
+Heat input = 5000 J
+
+Calculate the work output using the formula.
+
+
+problem: A gas follows the ideal gas law with a constant pressure of 200 kPa and a volume of 2 m³. If the temperature increases from 300 K to 400 K, calculate the final volume.
+answer: The ideal gas law states:
+PV = nRT
+
+Since the pressure is constant, the equation can be simplified to:
+V / T = constant
+
+Substituting the given values:
+Initial volume, Vi = 2 m³
+Initial temperature, Ti = 300 K
+Final temperature, Tf = 400 K
+Final volume, Vf = ?
+
+Set up the equation using the principle that V / T = constant, and solve for Vf.
+
+
+problem: A refrigeration cycle operates with a coefficient of performance (COP) of 4. If the heat extracted from the refrigerated space is 5000 J, calculate the work input required by the cycle.
+answer: The coefficient of performance (COP) of a refrigeration cycle is given by the equation:
+COP = (Heat extracted) / (Work input)
+
+Rearranging the equation:
+Work input = (Heat extracted) / COP
+
+Substituting the given values:
+COP = 4
+Heat extracted = 5000 J
+
+Calculate the work input using the formula.

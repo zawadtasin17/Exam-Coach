@@ -1,0 +1,60 @@
+problem: A machine requires 5 N of force to overcome its resistance and move at a constant velocity. If the applied force is 10 N, calculate the efficiency of the machine.
+answer: Efficiency = (Useful Output Power / Input Power) * 100
+
+In this case, the useful output power is the force required to overcome resistance multiplied by the velocity of the machine. The input power is the applied force multiplied by the velocity.
+
+Efficiency = ((5 N * velocity) / (10 N * velocity)) * 100
+
+
+problem: A machine has an output power of 10 kW and an input power of 15 kW. Calculate the efficiency of the machine.
+answer: Efficiency = (Useful Output Power / Input Power) * 100
+
+In this case, the useful output power is given as 10 kW, and the input power is given as 15 kW.
+
+Efficiency = (10 kW / 15 kW) * 100
+
+
+problem: A machine has a mechanical advantage of 4 and an efficiency of 80%. If the input force applied to the machine is 100 N, calculate the output force.
+answer: Efficiency = (Output Power / Input Power) * 100
+
+Mechanical Advantage = Output Force / Input Force
+
+Rearranging the equations, we get:
+
+Output Power = Input Power * Efficiency / 100
+
+Output Force = Mechanical Advantage * Input Force
+
+Substituting the given values:
+
+Output Power = (100 N * 4) = 400 N
+
+Output Force = (400 N * 80%) = 320 N
+
+
+problem: A machine has a velocity ratio of 5 and an efficiency of 75%. If the input work is 500 J, calculate the output work.
+answer: Efficiency = (Output Work / Input Work) * 100
+
+Velocity Ratio = Output Distance / Input Distance
+
+Rearranging the equations, we get:
+
+Output Work = Input Work * Efficiency / 100
+
+Output Distance = Velocity Ratio * Input Distance
+
+Substituting the given values:
+
+Output Work = (500 J * 75%) = 375 J
+
+Output Distance = (5 * Input Distance)
+
+
+problem:  A machine with a gear system has 20 teeth on the input gear and 80 teeth on the output gear. If the input speed is 200 rpm, calculate the output speed.
+answer: Input Speed * Number of Teeth on Input Gear = Output Speed * Number of Teeth on Output Gear
+
+Output Speed = (Input Speed * Number of Teeth on Input Gear) / Number of Teeth on Output Gear
+
+Substituting the given values:
+
+Output Speed = (200 rpm * 20) / 80 = 50 rpm

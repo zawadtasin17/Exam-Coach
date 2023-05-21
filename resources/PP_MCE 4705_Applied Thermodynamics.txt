@@ -1,0 +1,51 @@
+﻿question: A gas in a piston-cylinder system undergoes an isentropic compression process. The initial pressure is 1 MPa, the initial volume is 0.1 m³, and the final volume is 0.02 m³. If the heat capacity ratio (γ) for the gas is 1.4, calculate the final pressure.
+answer: For an isentropic process, the relationship between pressure and volume can be described by the equation:
+P1 / P2 = (V2 / V1)^(γ)
+
+Where P1 and P2 are the initial and final pressures, and V1 and V2 are the initial and final volumes.
+
+Substituting the given values:
+P1 = 1 MPa
+V1 = 0.1 m³
+V2 = 0.02 m³
+γ = 1.4
+
+Solve for P2 to find the final pressure.
+
+
+question: A steam power plant operates on the Rankine cycle. The boiler pressure is 10 MPa, and the condenser pressure is 10 kPa. The turbine has an isentropic efficiency of 80%, and the pump has an isentropic efficiency of 90%. Calculate the thermal efficiency of the power plant.
+answer: The thermal efficiency of a power plant operating on the Rankine cycle can be calculated using the equation:
+Thermal Efficiency = (Wnet / Qin) × 100
+
+Where Wnet is the net work output and Qin is the heat input.
+
+To calculate the net work output, we need to consider the work done by the turbine and the work done by the pump. The heat input can be calculated by considering the enthalpy change between the boiler and the condenser.
+
+Substitute the given values and calculate the thermal efficiency.
+ 
+
+question: A refrigeration system operates on the reversed Carnot cycle. The refrigerant absorbs heat energy of 5000 J from the refrigerated space and rejects heat energy of 2000 J to the surroundings. Calculate the coefficient of performance (COP) of the refrigeration system.
+answer: The coefficient of performance (COP) of a refrigeration system operating on the reversed Carnot cycle can be calculated using the equation:
+COP = (Qin / Qout)
+
+Where Qin is the heat energy absorbed by the refrigerant and Qout is the heat energy rejected by the refrigerant.
+
+Substituting the given values, calculate the COP of the refrigeration system.
+
+
+question:A gas turbine operates on the Brayton cycle. The compressor has an isentropic efficiency of 85%, and the turbine has an isentropic efficiency of 90%. The pressure ratio of the compressor is 10, and the temperature at the compressor inlet is 300 K. Calculate the cycle thermal efficiency.
+answer: The cycle thermal efficiency of a gas turbine operating on the Brayton cycle can be calculated using the equation:
+Thermal Efficiency = 1 - (1 / PR^(γ-1))
+
+Where PR is the pressure ratio and γ is the heat capacity ratio.
+
+Substituting the given values, calculate the cycle thermal efficiency.
+
+
+question: A diesel engine operates on the diesel cycle. The compression ratio is 16, and the heat capacity ratio is 1.4. The maximum temperature during the combustion process is 2000 K. Calculate the cut-off ratio of the cycle.
+answer: The cut-off ratio of a diesel cycle can be calculated using the equation:
+Cut-off Ratio = 1 - (1 / CR^(γ-1))
+
+Where CR is the compression ratio and γ is the heat capacity ratio.
+
+Substituting the given values, calculate the cut-off ratio of the cycle.

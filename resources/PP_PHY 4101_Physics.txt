@@ -1,0 +1,92 @@
+﻿problem: A car accelerates from rest at a constant rate of 3 m/s^2 for a time of 10 seconds. What is the final velocity of the car?
+answer: The final velocity (v) of the car can be calculated using the equation:
+
+v = u + at
+
+where u is the initial velocity, a is the acceleration, and t is the time.
+
+Given that the initial velocity (u) is 0 m/s, the acceleration (a) is 3 m/s^2, and the time (t) is 10 seconds, we can substitute these values into the equation:
+
+v = 0 m/s + (3 m/s^2)(10 s)
+= 30 m/s
+
+Hence, the final velocity of the car is 30 m/s.
+
+
+problem: A ball is thrown vertically upward with an initial velocity of 20 m/s. How high does the ball rise before it starts falling back down?
+answer: To determine the maximum height reached by the ball, we need to calculate the displacement at the highest point of its trajectory. The displacement (Δy) can be calculated using the equation:
+
+Δy = (v^2 - u^2) / (2g)
+
+where v is the final velocity, u is the initial velocity, and g is the acceleration due to gravity.
+
+Given that the initial velocity (u) is 20 m/s and the final velocity (v) is 0 m/s (at the highest point), we can substitute these values into the equation:
+
+Δy = (0^2 - 20^2) / (2 * (-9.8 m/s^2))
+= (-400 m^2/s^2) / (-19.6 m/s^2)
+= 20.41 m
+
+Hence, the ball rises to a height of approximately 20.41 meters before it starts falling back down.
+
+
+problem: A block of mass 2 kg is initially at rest on a horizontal surface. A force of 10 N is applied to the block horizontally. If the coefficient of kinetic friction between the block and the surface is 0.3, what is the acceleration of the block?
+answer: The force of kinetic friction can be calculated using the equation:
+
+F_friction = μ * N
+
+where μ is the coefficient of kinetic friction and N is the normal force.
+
+The normal force (N) is equal to the weight of the block (mg), where m is the mass and g is the acceleration due to gravity.
+
+Given that the mass (m) is 2 kg and the coefficient of kinetic friction (μ) is 0.3, we can calculate the normal force and frictional force as follows:
+
+N = mg = (2 kg)(9.8 m/s^2) = 19.6 N
+F_friction = μN = (0.3)(19.6 N) = 5.88 N
+
+The net force acting on the block is the difference between the applied force and the frictional force:
+
+F_net = F_applied - F_friction = 10 N - 5.88 N = 4.12 N
+
+Using Newton's second law (F = ma), we can calculate the acceleration (a) of the block:
+
+a = F_net / m = 4.12 N / 2 kg = 2.06 m/s^2
+
+Hence, the block accelerates at a rate of 2.06 m/s^2.
+
+
+problem: A light ray traveling in air enters a glass medium at an angle of incidence of 60 degrees. If the refractive index of the glass is 1.5, what is the angle of refraction?
+answer: The relationship between the angle of incidence (θ1), the angle of refraction (θ2), and the refractive indices (n1 and n2) can be determined using Snell's law:
+
+n1 * sin(θ1) = n2 * sin(θ2)
+
+In this case, the angle of incidence (θ1) is 60 degrees and the refractive index of air (n1) is approximately 1 (since it is close to vacuum). The refractive index of the glass (n2) is 1.5. We can substitute these values into Snell's law and solve for the angle of refraction (θ2):
+
+1 * sin(60 degrees) = 1.5 * sin(θ2)
+
+sin(60 degrees) = 1.5 * sin(θ2)
+
+θ2 = sin^(-1)((sin(60 degrees)) / 1.5)
+
+Using a calculator, we can evaluate this expression to find:
+
+θ2 ≈ 38.7 degrees
+
+Hence, the angle of refraction is approximately 38.7 degrees.
+
+
+problem: A circuit consists of a 12-volt battery and two resistors connected in series. The first resistor has a resistance of 4 ohms, and the second resistor has a resistance of 6 ohms. What is the total current flowing through the circuit?
+answer: To find the total current flowing through the circuit, we can use Ohm's law:
+
+I = V / R_total
+
+where I is the current, V is the voltage, and R_total is the total resistance.
+
+In this case, the voltage (V) is 12 volts, and the total resistance (R_total) is the sum of the resistances of the two resistors:
+
+R_total = R1 + R2 = 4 ohms + 6 ohms = 10 ohms
+
+Substituting these values into the equation, we can calculate the total current:
+
+I = 12 volts / 10 ohms = 1.2 amperes
+
+Hence, the total current flowing through the circuit is 1.2 amperes.

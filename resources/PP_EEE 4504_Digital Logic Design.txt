@@ -1,0 +1,72 @@
+problem: Design a 2-to-4 decoder using only NAND gates.
+answer: To design a 2-to-4 decoder using NAND gates, we can use the following logic diagram:
+
+css
+Copy code
+   A    |   B    |   Y0   |   Y1   |   Y2   |   Y3
+--------|--------|--------|--------|--------|--------
+   0    |   0    |   1    |   0    |   0    |   0
+   0    |   1    |   0    |   1    |   0    |   0
+   1    |   0    |   0    |   0    |   1    |   0
+   1    |   1    |   0    |   0    |   0    |   1
+The logic diagram shows the input combinations (A and B) and the corresponding output combinations (Y0, Y1, Y2, Y3) using NAND gates. Each NAND gate is used to invert the inputs or the outputs as needed.
+
+
+problem: Implement a 4-input AND gate using only 2-input AND gates.
+answer: Implement a 4-input AND gate using only 2-input AND gates.
+ A    |   B    |   C    |   D    |   Y
+--------|--------|--------|--------|--------
+   0    |   0    |   0    |   0    |   0
+   0    |   0    |   0    |   1    |   0
+   0    |   0    |   1    |   0    |   0
+   0    |   0    |   1    |   1    |   0
+   0    |   1    |   0    |   0    |   0
+   0    |   1    |   0    |   1    |   0
+   0    |   1    |   1    |   0    |   0
+   0    |   1    |   1    |   1    |   0
+   1    |   0    |   0    |   0    |   0
+   1    |   0    |   0    |   1    |   0
+   1    |   0    |   1    |   0    |   0
+   1    |   0    |   1    |   1    |   0
+   1    |   1    |   0    |   0    |   0
+   1    |   1    |   0    |   1    |   0
+   1    |   1    |   1    |   0    |   0
+   1    |   1    |   1    |   1    |   1
+The logic diagram shows the input combinations (A, B, C, D) and the corresponding output (Y) using 2-input AND gates. The four 2-input AND gates are used to combine the four inputs to produce the desired output.
+
+problem: Simplify the Boolean expression: F = (A + B)(A' + C)(B' + C').
+answer: To simplify the Boolean expression, we can use Boolean algebra laws and simplification techniques:
+
+F = (A + B)(A' + C)(B' + C')
+= (A(A' + C) + B(A' + C))(B' + C')
+= (AA' + AC + BA' + BC)(B' + C')
+= (0 + AC + BA' + BC)(B' + C')
+= (AC + BA' + BC)(B' + C')
+= ACB' + ACA' + BA'B + BA'C + BCB' + BCC'
+= ACB' + ACA' + BA'B + BA'C + 0 + BCC'
+= ACB' + ACA' + BA'B + BA'C + BCC'
+= ACB' + ACA' + BA'B + BA'C + BC
+
+Hence, the simplified Boolean expression is F = ACB' + ACA' + BA'B + BA'C + BC.
+
+
+problem: Implement a 3-input XOR gate using only 2-input XOR gates.
+answer: To implement a 3-input XOR gate using only 2-input XOR gates, we can use the following logic diagram:
+ A    |   B    |   C    |   Y
+--------|--------|--------|--------
+   0    |   0    |   0    |   0
+   0    |   0    |   1    |   1
+   0    |   1    |   0    |   1
+   0    |   1    |   1    |   0
+   1    |   0    |   0    |   1
+   1    |   0    |   1    |   0
+   1    |   1    |   0    |   0
+   1    |   1    |   1    |   1
+The logic diagram shows the input combinations (A, B, C) and the corresponding output (Y) using 2-input XOR gates. The three 2-input XOR gates are used to combine the three inputs to produce the desired output.
+
+problem: Design a 4-bit binary counter using D flip-flops.
+answer: To design a 4-bit binary counter using D flip-flops, we can use the following logic diagram:
+  ______        ______        ______
+Clock --|D0   Q0|--Q0--|D1   Q1|--Q1--|D2   Q2|--Q2--|D3   Q3|--Q3--
+        |______|      |______|      |______|      |______|
+        The logic diagram shows four D flip-flops connected in a cascaded fashion. The Q output of each flip-flop is connected to the D input of the next flip-flop. The clock signal is applied to the clock input of the first flip-flop (D0-Q0). Each flip-flop represents one bit of the 4-bit binary counter. The outputs Q0, Q1, Q2, and Q3 represent the 4-bit binary count.

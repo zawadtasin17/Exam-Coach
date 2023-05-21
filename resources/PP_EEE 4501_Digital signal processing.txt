@@ -1,0 +1,46 @@
+﻿problem: Calculate the Discrete Fourier Transform (DFT) of the sequence x[n] = {1, 2, 3, 4}.
+answer: To calculate the DFT of a sequence, we use the formula:
+
+X[k] = ∑[n=0 to N-1] x[n] * e^(-j2πkn/N)
+
+Given the sequence x[n] = {1, 2, 3, 4}, we have N = 4. Substituting the values into the formula, we get:
+
+X[0] = 1 * e^(-j2π00/4) + 2 * e^(-j2π01/4) + 3 * e^(-j2π02/4) + 4 * e^(-j2π03/4) = 10
+X[1] = 1 * e^(-j2π10/4) + 2 * e^(-j2π11/4) + 3 * e^(-j2π12/4) + 4 * e^(-j2π13/4) = -2 + 2j
+X[2] = 1 * e^(-j2π20/4) + 2 * e^(-j2π21/4) + 3 * e^(-j2π22/4) + 4 * e^(-j2π23/4) = -2
+X[3] = 1 * e^(-j2π30/4) + 2 * e^(-j2π31/4) + 3 * e^(-j2π32/4) + 4 * e^(-j2π33/4) = -2 - 2j
+
+Hence, the DFT of the sequence x[n] = {1, 2, 3, 4} is X[k] = {10, -2 + 2j, -2, -2 - 2j}.
+
+problem: Given the transfer function H(z) = (1 - z^-1)/(1 + 0.5z^-1), determine the magnitude and phase response.
+answer: To determine the magnitude and phase response from a transfer function, we can rewrite it in terms of z^-1 and evaluate it for different frequencies.
+
+H(z) = (1 - z^-1)/(1 + 0.5z^-1)
+= (z - 1)/(z + 0.5)
+
+The magnitude response can be calculated as:
+
+|H(e^(jω))| = |H(z)|, where z = e^(jω)
+
+|H(e^(jω))| = |(e^(jω) - 1)/(e^(jω) + 0.5)|
+
+The phase response can be calculated as:
+
+∠H(e^(jω)) = ∠H(z), where z = e^(jω)
+
+∠H(e^(jω)) = ∠(e^(jω) - 1) - ∠(e^(jω) + 0.5)
+
+Evaluate the magnitude and phase response for different frequencies (ω) to obtain the frequency response.
+
+problem: Implement a Finite Impulse Response (FIR) filter with the following coefficients: h[n] = {1, 2, 3, 2, 1}.
+answer: To implement an FIR filter, we convolve the input sequence with the filter coefficients. Given the coefficients h[n] = {1, 2, 3, 2, 1}, the output sequence y[n] can be calculated as:
+
+y[n] = x[n]*h[0] + x[n-1]*h[1] + x[n-2]*h[2] + x[n-3]*h[3] + x[n-4]*h[4]
+
+where x[n] is the input sequence.
+
+problem: Apply the Fast Fourier Transform (FFT) algorithm to calculate the DFT of a sequence of length 8.
+answer: The FFT algorithm is used to efficiently calculate the DFT of a sequence. Given a sequence of length 8, we can apply the FFT algorithm to compute the DFT in a fast and efficient manner.
+
+problem: Design a Butterworth low-pass filter with a cutoff frequency of 1 kHz and an order of 4.
+answer: To design a Butterworth low-pass filter, we can use the Butterworth filter design equations and specifications. Given a cutoff frequency of 1 kHz and an order of 4, we can calculate the required filter coefficients and implement the filter using suitable digital signal processing techniques.

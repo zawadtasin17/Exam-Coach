@@ -1,0 +1,65 @@
+﻿problem: A 3-phase synchronous generator is operating at a synchronous speed of 1200 RPM. If the number of poles is 4, what is the frequency of the generated voltage?
+answer: The formula to calculate the frequency of the generated voltage is:
+
+Frequency = (Synchronous Speed * Number of Poles) / 120
+
+Given that the synchronous speed is 1200 RPM and the number of poles is 4, we can substitute these values into the formula:
+
+Frequency = (1200 RPM * 4) / 120
+= 40 Hz
+
+Hence, the frequency of the generated voltage is 40 Hz.
+
+
+problem:  An induction motor has a synchronous speed of 1800 RPM and a slip of 5%. What is the actual rotor speed?
+answer: The formula to calculate the actual rotor speed of an induction motor is:
+
+Rotor Speed = Synchronous Speed * (1 - Slip)
+
+Given that the synchronous speed is 1800 RPM and the slip is 5% (0.05), we can substitute these values into the formula:
+
+Rotor Speed = 1800 RPM * (1 - 0.05)
+= 1800 RPM * 0.95
+= 1710 RPM
+
+Hence, the actual rotor speed of the induction motor is 1710 RPM.
+
+
+problem:  A transformer has a primary winding with 500 turns and a secondary winding with 2000 turns. If the primary voltage is 240V, what is the secondary voltage?
+answer: The formula to calculate the secondary voltage of a transformer is:
+
+Secondary Voltage = (Secondary Turns / Primary Turns) * Primary Voltage
+
+Given that the primary winding has 500 turns, the secondary winding has 2000 turns, and the primary voltage is 240V, we can substitute these values into the formula:
+
+Secondary Voltage = (2000 turns / 500 turns) * 240V
+= 8 * 240V
+= 1920V
+
+Hence, the secondary voltage of the transformer is 1920V.
+
+
+problem: A DC motor is connected to a 240V supply and draws a current of 10A. If the armature resistance is 0.5Ω, what is the voltage across the armature terminals?
+answer: The voltage across the armature terminals of a DC motor can be calculated using Ohm's law:
+
+Voltage = Current * Resistance
+
+Given that the current is 10A and the armature resistance is 0.5Ω, we can substitute these values into the formula:
+
+Voltage = 10A * 0.5Ω
+= 5V
+
+Hence, the voltage across the armature terminals of the DC motor is 5V.
+
+
+problem: A 3-phase squirrel cage induction motor has a power factor of 0.8 lagging and an efficiency of 90%. If the input power to the motor is 20 kW, what is the apparent power?
+answer: The apparent power of an electrical system can be calculated using the formula:
+
+Apparent Power = Real Power / Power Factor
+
+Given that the real power is 20 kW and the power factor is 0.8 lagging, we can substitute these values into the formula:
+
+Apparent Power = 20 kW / 0.8
+= 25 kVA
+
+Hence, the apparent power of the 3-phase induction motor is 25 kVA.

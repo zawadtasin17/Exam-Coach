@@ -1,0 +1,71 @@
+﻿problem: Calculate the total resistance of a series circuit consisting of three resistors with values of 10 Ω, 20 Ω, and 30 Ω connected in series.
+answer: In a series circuit, the total resistance is the sum of the individual resistances. Therefore, the total resistance (R_total) can be calculated as follows:
+
+R_total = R1 + R2 + R3
+= 10 Ω + 20 Ω + 30 Ω
+= 60 Ω
+
+Hence, the total resistance of the series circuit is 60 Ω.
+
+problem: Calculate the total capacitance of a parallel circuit consisting of three capacitors with values of 2 μF, 4 μF, and 6 μF connected in parallel.
+answer: In a parallel circuit, the total capacitance is the sum of the individual capacitances. Therefore, the total capacitance (C_total) can be calculated as follows:
+
+1/C_total = 1/C1 + 1/C2 + 1/C3
+= 1/2 μF + 1/4 μF + 1/6 μF
+= (3/6) + (6/6) + (4/6)
+= 13/6 μF
+
+C_total = 6/13 μF
+
+Hence, the total capacitance of the parallel circuit is 6/13 μF.
+
+
+problem: Calculate the power dissipated in a resistor of 10 Ω with a current of 2 A flowing through it.
+answer: The power dissipated in a resistor can be calculated using the formula:
+
+P = I^2 * R
+
+where P is the power, I is the current, and R is the resistance.
+
+Given that the resistance (R) is 10 Ω and the current (I) is 2 A, we can substitute these values into the formula:
+
+P = (2 A)^2 * 10 Ω
+= 4 A^2 * 10 Ω
+= 40 W
+
+Hence, the power dissipated in the 10 Ω resistor is 40 W.
+
+
+problem: Calculate the power factor of a circuit with a real power of 800 W and an apparent power of 1000 VA.
+answer: The power factor (PF) of a circuit can be calculated using the formula:
+
+PF = Real Power / Apparent Power
+
+Given that the real power is 800 W and the apparent power is 1000 VA, we can substitute these values into the formula:
+
+PF = 800 W / 1000 VA
+= 0.8
+
+Hence, the power factor of the circuit is 0.8.
+
+
+problem: Calculate the total current flowing through a parallel circuit consisting of three resistors with values of 2 Ω, 4 Ω, and 6 Ω connected in parallel, when a voltage of 12 V is applied across the circuit.
+answer: In a parallel circuit, the total current is the sum of the individual branch currents. To calculate the branch currents, we can use Ohm's Law:
+
+I = V / R
+
+where I is the current, V is the voltage, and R is the resistance.
+
+For each resistor, we can calculate the branch currents as follows:
+
+I1 = 12 V / 2 Ω = 6 A
+I2 = 12 V / 4 Ω = 3 A
+I3 = 12 V / 6 Ω = 2 A
+
+The total current (I_total) can be calculated as the sum of the branch currents:
+
+I_total = I1 + I2 + I3
+= 6 A + 3 A + 2 A
+= 11 A
+
+Hence, the total current flowing through the parallel circuit is 11 A.

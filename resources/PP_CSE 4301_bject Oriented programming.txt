@@ -1,0 +1,103 @@
+problem: Create a class called "Circle" with attributes radius and methods to calculate the area and circumference of the circle.
+answer: class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+    
+    def calculate_area(self):
+        return 3.14159 * self.radius**2
+    
+    def calculate_circumference(self):
+        return 2 * 3.14159 * self.radius
+
+# Usage:
+circle = Circle(5)
+print("Area:", circle.calculate_area())
+print("Circumference:", circle.calculate_circumference())
+
+problem: Create a class called "Student" with attributes name, roll number, and methods to display the student details and calculate the average grade based on three subject marks.
+answer: class Student:
+    def __init__(self, name, roll_number, marks):
+        self.name = name
+        self.roll_number = roll_number
+        self.marks = marks
+    
+    def display_details(self):
+        print("Name:", self.name)
+        print("Roll Number:", self.roll_number)
+    
+    def calculate_average_grade(self):
+        total_marks = sum(self.marks)
+        average_grade = total_marks / len(self.marks)
+        return average_grade
+
+# Usage:
+student = Student("John Doe", "2021001", [85, 90, 92])
+student.display_details()
+print("Average Grade:", student.calculate_average_grade())
+
+
+problem: Create a class called "Rectangle" with attributes length and width, and methods to calculate the area and perimeter of the rectangle.
+answer: class Rectangle:
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+    
+    def calculate_area(self):
+        return self.length * self.width
+    
+    def calculate_perimeter(self):
+        return 2 * (self.length + self.width)
+
+# Usage:
+rectangle = Rectangle(5, 10)
+print("Area:", rectangle.calculate_area())
+print("Perimeter:", rectangle.calculate_perimeter())
+
+
+problem: Create a class called "BankAccount" with attributes account number, account holder name, and balance, and methods to deposit and withdraw funds from the account.
+answer: class BankAccount:
+    def __init__(self, account_number, account_holder, balance):
+        self.account_number = account_number
+        self.account_holder = account_holder
+        self.balance = balance
+    
+    def deposit(self, amount):
+        self.balance += amount
+    
+    def withdraw(self, amount):
+        if self.balance >= amount:
+            self.balance -= amount
+        else:
+            print("Insufficient balance.")
+    
+    def display_details(self):
+        print("Account Number:", self.account_number)
+        print("Account Holder:", self.account_holder)
+        print("Balance:", self.balance)
+
+# Usage:
+account = BankAccount("123456789", "John Doe", 1000)
+account.display_details()
+account.deposit(500)
+account.withdraw(200)
+account.display_details()
+
+
+problem: Create a class called "Car" with attributes make, model, and year, and a method to display the car details.
+answer: class Car:
+    def __init__(self, make, model, year):
+        self.make = make
+        self.model = model
+        self.year = year
+    
+    def display_details(self):
+        print("Make:", self.make)
+        print("Model:", self.model)
+        print("Year:", self.year)
+
+# Usage:
+car = Car("Toyota", "Corolla", 2022)
+car.display_details()
+
+
+

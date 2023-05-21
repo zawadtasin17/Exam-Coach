@@ -1,0 +1,41 @@
+problem:  A mechatronic system consists of a DC motor, a gear mechanism, and a position sensor. The gear mechanism has a gear ratio of 1:5, and the position sensor has a resolution of 0.1 degrees. If the motor rotates at 1000 rpm, calculate the resolution of the system in degrees.
+answer: The resolution of the mechatronic system can be calculated by considering the resolution of the position sensor and the gear ratio. Since the position sensor has a resolution of 0.1 degrees, we need to take into account the gear ratio to determine the overall resolution of the system.
+
+Calculate the overall resolution of the system using the given values.
+
+
+problem: A mechatronic system utilizes a PID controller to control the position of a robotic arm. The PID controller has the following gains: Kp = 1, Ki = 0.5, and Kd = 0.2. If the desired position is 50 degrees and the initial position is 0 degrees, calculate the control signal (output) of the PID controller.
+answer: The control signal (output) of a PID controller can be calculated using the equation:
+Control Signal = Kp * Error + Ki * Integral of Error + Kd * Derivative of Error
+
+Substituting the given values:
+Kp = 1
+Ki = 0.5
+Kd = 0.2
+Desired Position = 50 degrees
+Initial Position = 0 degrees
+
+Calculate the control signal of the PID controller using the equation.
+
+
+problem: A mechatronic system employs a proximity sensor to detect the presence of an object. The proximity sensor has a sensing range of 10 cm. If an object is located at a distance of 5 cm from the sensor, determine the output signal of the sensor.
+answer: The output signal of a proximity sensor can be determined based on the distance between the sensor and the object. The sensor has a sensing range of 10 cm, so if the object is located within this range, the output signal will indicate the presence of an object.
+
+Determine the output signal of the proximity sensor based on the given distance.
+
+
+problem: A mechatronic system incorporates a stepper motor with a step angle of 1.8 degrees. If the motor rotates through 200 steps, calculate the total rotation angle of the motor. 
+answer:Solution:
+The total rotation angle of a stepper motor can be calculated by multiplying the step angle by the number of steps.
+
+Substituting the given values:
+Step Angle = 1.8 degrees
+Number of Steps = 200
+
+Calculate the total rotation angle of the stepper motor.
+ 
+
+problem: A mechatronic system uses a force sensor to measure the force applied to a robotic gripper. The force sensor has a range of 0-500 N and a resolution of 0.1 N. If the applied force is 250 N, calculate the quantization error of the force measurement.
+answer: The quantization error of the force measurement can be calculated as the difference between the actual force and the closest quantization level of the force sensor. In this case, the closest quantization level will be the one that corresponds to the measured force value.
+
+Calculate the quantization error of the force measurement using the given values.

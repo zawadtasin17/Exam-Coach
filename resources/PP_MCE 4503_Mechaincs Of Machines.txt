@@ -1,0 +1,60 @@
+problem: A gear train consists of a driver gear with 20 teeth and a driven gear with 40 teeth. If the driver gear rotates at 1000 rpm, calculate the speed of the driven gear in rpm.
+answer: The speed of the driven gear can be calculated using the gear ratio equation:
+Gear Ratio = Number of Teeth on Driven Gear / Number of Teeth on Driver Gear
+
+Substituting the given values:
+Number of Teeth on Driver Gear = 20
+Number of Teeth on Driven Gear = 40
+
+Gear Ratio = 40 / 20 = 2
+
+The speed of the driven gear is equal to the speed of the driver gear multiplied by the gear ratio:
+Speed of Driven Gear = Speed of Driver Gear × Gear Ratio
+Speed of Driven Gear = 1000 rpm × 2 = 2000 rpm
+
+problem: A lever has an effort arm of 0.5 m and a load arm of 1.5 m. If the effort applied is 50 N, calculate the load that can be lifted.
+answer: The principle of moments can be used to calculate the load that can be lifted:
+Load × Load Arm = Effort × Effort Arm
+
+Substituting the given values:
+Effort Arm = 0.5 m
+Load Arm = 1.5 m
+Effort = 50 N
+
+Load × 1.5 m = 50 N × 0.5 m
+
+Solve for the Load to determine the load that can be lifted.
+
+
+problem: A pulley system consists of a fixed pulley and a movable pulley. If the effort applied is 100 N and the mechanical advantage of the system is 3, calculate the load that can be lifted.
+answer: The mechanical advantage of a pulley system is given by the equation:
+Mechanical Advantage = Load / Effort
+
+Substituting the given values:
+Effort = 100 N
+Mechanical Advantage = 3
+
+Solve for the Load to determine the load that can be lifted.
+
+problem: A four-bar linkage mechanism consists of four links connected by revolute joints. The lengths of the links are as follows: Link 1 = 5 cm, Link 2 = 10 cm, Link 3 = 7 cm, and Link 4 = 12 cm. If the input link rotates at a speed of 60 rpm, calculate the angular velocity of the output link.
+answer: The angular velocity ratio of a four-bar linkage mechanism can be calculated using the equation:
+Angular Velocity Ratio = (Length of Link 2 / Length of Link 4) × (Length of Link 3 / Length of Link 1)
+
+Substituting the given values:
+Length of Link 1 = 5 cm
+Length of Link 2 = 10 cm
+Length of Link 3 = 7 cm
+Length of Link 4 = 12 cm
+
+Calculate the angular velocity of the output link using the angular velocity ratio and the angular velocity of the input link.
+
+
+problem: A cam mechanism consists of a rotating cam and a follower. If the cam rotates at a speed of 300 rpm and has a cam profile with a rise of 2 cm, calculate the linear velocity of the follower when the rise occurs.
+answer: The linear velocity of the follower can be calculated using the equation:
+Linear Velocity of Follower = Angular Velocity of Cam × Radius of Cam
+
+Substituting the given values:
+Angular Velocity of Cam = 300 rpm
+Radius of Cam = ?
+
+To calculate the radius of the cam, we need to know the cam profile. Once the radius is determined, we can calculate the linear velocity of the follower.
