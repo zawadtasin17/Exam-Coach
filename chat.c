@@ -495,6 +495,6 @@ void displayMessage(char* str , int list)
 	for (int i = 0; message[i] != '\0'; i++)
 	{
 		printf("%c", message[i]);
-		Sleep(80);
+		Sleep(30);
 	}
 }
